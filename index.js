@@ -16,6 +16,7 @@ window.onload = function(){
     var token_code = document.createElement("CODE");   // Create a <button> element
     token_code.innerHTML = token;                   // Insert text
     // token_code.style = 'width:100%;'
+    token_paragraph = document.getElementById("token")
     token_paragraph.appendChild(token_code);
     
     var hr = document.createElement("HR");   // Create a <button> element
