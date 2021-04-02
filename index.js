@@ -16,15 +16,16 @@ const copy_button_fn = str => {
 };
 window.onload = function(){
     console.log('lol');
+    token_paragraph = document.getElementById("token")
     var token_code = document.createElement("CODE");   // Create a <button> element
     token_code.innerHTML = token;                   // Insert text
-    token_code.style = 'width:100%;'
-    document.body.appendChild(token_code);
+    // token_code.style = 'width:100%;'
+    token_paragraph.appendChild(token_code);
     
-    var copy_button = document.createElement("HR");   // Create a <button> element
+    var hr = document.createElement("HR");   // Create a <button> element
     // copy_button.innerHTML = 'Copia';                   // Insert text
-    copy_button.style = 'width:100%;'
-    document.body.appendChild(copy_button);
+    hr.style = 'width:100%;color: #FFFFFF;'
+    document.body.appendChild(hr);
 
     var copy_button = document.createElement("BUTTON");   // Create a <button> element
     copy_button.innerHTML = 'Copia';                   // Insert text
