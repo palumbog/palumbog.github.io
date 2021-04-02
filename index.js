@@ -1,9 +1,7 @@
-console.log(window.location.href);
 var url=window.location.href;
 var access_token_str='access_token';
 var expires_in_str = '&expires_in';
 var token= url.substring(url.indexOf(access_token_str)+access_token_str.length+1, url.indexOf(expires_in_str));
-console.log(token);
 
 const copy_button_fn = str => {
   const el = document.createElement('textarea');
@@ -15,7 +13,6 @@ const copy_button_fn = str => {
   alert("Token copiato, incollalo nel bot Telegram.");
 };
 window.onload = function(){
-    console.log('lol');
     var token_code = document.createElement("CODE");   // Create a <button> element
     token_code.innerHTML = token;                   // Insert text
     token_code.style = 'width:100%;'
